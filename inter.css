@@ -1,0 +1,264 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(225, 239, 244);
+}
+
+#see {
+    background-color: white;
+    width: 100%;
+    height: 67px;
+}
+
+#in {
+    background-color: white;
+    width: 15%;
+    height: 40px;
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-left: 494px;
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    margin-top: -27px;
+    margin-left: 700px;
+    text-align: center;
+    color: rgb(50, 47, 136);
+}
+
+#notic {
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: rgb(71, 71, 71);
+    border-radius: 0.2rem;
+    cursor: pointer;
+    position: relative;
+}
+
+#notic .count {
+    background-color: blue;
+    color: white;
+    padding: 0rem 0.2rem;
+    border-radius: 0.2rem;
+    position: absolute;
+    top: 12.1px;
+    right: 13px;
+    font-size: 14px;
+}
+
+.fa-bell {
+    font-size: 27px;
+}
+
+#mess {
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: rgb(71, 71, 71);
+    border-radius: 0.2rem;
+    cursor: pointer;
+    position: relative;
+}
+
+#mess .count1 {
+    background-color: green;
+    color: white;
+    padding: 0rem 0.2rem;
+    border-radius: 0.2rem;
+    position: absolute;
+    top: 12.1px;
+    right: 13px;
+    font-size: 14px;
+}
+
+.fa-message {
+    font-size: 25px;
+}
+
+.pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 31px;
+    margin-top: 9px;
+}
+
+#right {
+    display: flex;
+    column-gap: 0.1px;
+    align-items: center;
+    margin-left: 1202px;
+    margin-top: -55px;
+}
+
+#right1 {
+    display: flex;
+    margin-left: 1343px;
+    column-gap: 2px;
+    margin-top: -70px;
+}
+
+h3 {
+    margin-top: 21px;
+    margin-left: 8px;
+    color: rgb(50, 47, 136);
+}
+
+#ico5 {
+    margin-top: 21px;
+    margin-left: 4px;
+    color: rgb(50, 47, 136);
+}
+
+#sidebar {
+    position: fixed;
+    width:336px;
+    height: 2058%;
+    left: -336px;
+    background-color: white;
+    transition: left 200ms ease-in-out;
+}
+
+#sidebar{
+    position: fixed;
+    width: 329px;
+    height:2058%;
+    left: -329px;
+    background-color: white;
+    transition: left 200ms ease-in-out;
+}
+#sidebar li{
+    font-size: 20px;
+    padding: 5px;
+    letter-spacing: 1px;
+}
+
+
+ul li a{
+    color: rgb(2, 10, 81);
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+    /* font-size: 20px; */
+    /* letter-spacing: 1px; */
+    position: relative;
+    transition: 0.3s ease ease-in-out;
+    overflow: hidden;
+    text-transform: capitalize;
+} 
+ul li:hover a{
+    background-color: rgba(224, 242, 243, 0.419);
+    color:rgb(41, 82, 185);
+    letter-spacing: 1px;
+
+}
+
+ul li a i{
+    width: 50px;
+    font-size: 25px;
+    text-align: center;
+    
+}    
+#p1{
+    margin-left: 97px;
+   }
+#p2{
+    margin-left: 85px;
+}
+#p3{
+    margin-left: 139px;
+}
+#p4{
+    margin-left: 135px;
+}
+#p5{
+    margin-left: 135px;
+}
+#p6{
+    margin-left: 145px;
+}
+
+
+
+.toggle-btn{
+    position: fixed;
+    left:29%;
+    top: 24px;
+    
+}
+.toggle-btn span{
+    display: block;
+    background-color: rgb(18, 7, 88);
+    width: 28px;
+    height: 4px;
+    margin: 3px;
+}
+
+#sidebar.active{
+    left: 0;
+}
+
+#sidebar > li > a > .fa-chevron-down{
+    transition: 0.5s ease;
+    pointer-events: none;
+    cursor: pointer;
+}
+li:hover > a > .fa-chevron-down{
+    transform: rotate(-180deg);
+}
+
+
+/* Sub-menu visibility */
+.sub-menu {
+    display: none;
+}
+
+.sub-menu.active {
+    display: block;
+}
+
+#sub-menu-dashboard li, #sub-menu-profile li {
+    display: none;
+}
+
+.sub-menu.active li {
+    display: block;
+}
+
+h6{
+    margin-left: 28px;
+    color: grey;
+    font-size: 15px;
+}
+
+#item a{
+    font-size: 19px;
+    padding: 4px 10px;
+   color: rgb(44, 35, 146);
+   background-color: white;
+   display: inline;
+   margin-left: 97px;
+   
+}
+#item:hover a{
+    background-color: rgba(224, 242, 243, 0.419);
+    color:rgb(41, 82, 185);
+    
+    letter-spacing: 1px;
+
+}
+.sub-menu{
+    list-style: circle;
+}

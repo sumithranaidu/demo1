@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./inter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        
+        function togglemenu() {
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+
+        function toggleside(event) {
+            const listItem = event.target.closest('li');
+            const subMenu = listItem.querySelector('ul');
+            if (subMenu) {
+                subMenu.classList.toggle('active');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div id="main">
+            <div id="left">
+                <div id="see">
+                    <input type="text" placeholder="search" id="in">
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass" id="ico2"></i>
+                    </div>
+                </div>
+
+                <div id="right">
+                    <div id="notic">
+                        <div class="count">+4</div>
+                        <i class="fa-sharp fa-regular fa-bell" id="ico3"></i>
+                    </div>
+                    <div id="mess">
+                        <div class="count1">+3</div>
+                        <i class="fa-regular fa-message" id="ico4"></i>
+                    </div>
+                </div>
+
+                <div id="right1">
+                    <div id="pic">
+                        <img src="img/professional-profile-pictures-1080-x-1080-460wjhrkbwdcp1ig.jpg" class="pic">
+                    </div>
+                    <div>
+                        <h3>k. Anderson</h3>
+                    </div>
+                    <div id="icon">
+                        <i class="fa-solid fa-caret-down" id="ico5"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="togglemenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <!-- Dashboard item with unique submenu ID -->
+            <li class="me">
+                 <a href="">
+                    <i class="fas fa-qrcode"></i>Dashboard
+                    
+                 </a>
+                    <ul class="sub-menu">
+                        <li id="item"><a href="#">home</a></li>
+                        <li id="item"><a href="#">home</a></li>
+                        <li id="item"><a href="#">home</a></li>
+                    </ul>
+            </li>
+
+            <!-- Profile item with unique submenu ID -->
+            <li><a href="javascript:void(0)" onclick="toggleside(event)"><i class="fa-solid fa-sliders"></i>Components<i class="fa-sharp fa-solid fa-chevron-down" id="p2"></i></a>
+                    <ul class="sub-menu">
+                        <li id="item"><a href="#">Alerts</a></li>
+                        <li id="item"><a href="#">According</a></li>
+                        <li id="item"><a href="#">Badges</a></li>
+                        <li id="item"><a href="#">Breadcrumbs</a></li>
+                        <li id="item"><a href="#">Buttons</a></li>
+                        <li id="item"><a href="#">Cards</a></li>
+                        <li id="item"><a href="#">Carousel</a></li>
+                        <li id="item"><a href="#">List group</a></li>
+                        <li id="item"><a href="#">Modal</a></li>
+                    </ul>
+                
+            </li>
+
+            <!-- Profile item with unique submenu ID -->
+
+             <li id="one"><a href="javascript:void(0)" onclick="toggleside(event)"><i class="fa-solid fa-file"></i>Forms<i class="fa-sharp fa-solid fa-chevron-down" id="p3"></i> </a>
+                    <ul class="sub-menu">
+                        <li id="item"><a href="#">Form Element</a></li>
+                        <li id="item"><a href="#">From Layouts</a></li>
+                        <li id="item"><a href="#">From Editors</a></li>
+                        <li id="item"><a href="#">From Validation</a></li>
+                    </ul>
+             </li>
+
+             <!-- Profile item with unique submenu ID -->
+
+             <li><a href="javascript:void(0)" onclick="toggleside(event)"><i class="fa-solid fa-table"></i>Tables<i class="fa-sharp fa-solid fa-chevron-down" id="p4"></i></a>
+                    <ul class="sub-menu">
+                        <li id="item"><a href="#">General Tables</a></li>
+                        <li id="item"><a href="#">Data Tables</a></li>
+                    
+                    </ul>
+             </li>
+
+
+
+             <!-- Profile item with unique submenu ID -->
+
+             <li><a href="javascript:void(0)" onclick="toggleside(event)"><i class="fa-solid fa-chart-simple"></i>Charts<i class="fa-sharp fa-solid fa-chevron-down" id="p5"></i></a>
+                    <ul class="sub-menu">
+                        <li id="item"><a href="#">Chart.js</a></li>
+                        <li id="item"><a href="#">ApexCharts</a></li>
+                        <li id="item"><a href="#">ECharts</a></li>
+                    </ul>
+             </li>
+
+
+             <!-- Profile item with unique submenu ID -->
+
+             <li><a href="javascript:void(0)" onclick="toggleside(event)"><i class="fa-regular fa-gem"></i>Icons<i class="fa-sharp fa-solid fa-chevron-down" id="p6"></i></a>
+                <ul class="sub-menu">
+                    <li id="item"><a href="#">Bootstrap Icons</a></li>
+                    <li id="item"><a href="#">Remix Icons</a></li>
+                    <li id="item"><a href="#">Boxicons</a></li>
+                </ul>
+            </li>
+
+             
+
+
+
+        </ul>
+
+
+
+        <h6>PAGES</h6>
+
+                  <ul id="side2">
+                    <li><a href="#"><i class="fa-solid fa-user"></i></i>Profile</a></li>
+                    <li><a href="#"><i class="fa-solid fa-question"></i>F.A.Q</a></li>
+                    <li><a href="#"><i class="fa-regular fa-envelope"></i>Contact</a></li>
+                    <li><a href="#"><i class="fa-solid fa-file-pen"></i></i>Register</a></li>
+
+                  </ul>
+
+    </div>
+</body>
+
+</html>
